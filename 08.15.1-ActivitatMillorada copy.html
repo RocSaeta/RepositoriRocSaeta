@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Jugadors</title>
+</head>
+<body>
+   
+
+<h2>OMPLE EL FORMULARI INICI JUGADOR</h2>
+
+<form>
+
+    <fieldset>
+        <legend>Informació Personal</legend>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="cognom">Cognom:</label>
+        <input type="text" id="cognom" name="cognom" required>
+
+        <label for="adreca">Adreça Completa:</label>
+        <input id="adreca" name="adreca" required placeholder="Carrer...."></input>
+
+        <label for="genere">Gènere:</label>
+        <select id="genere" name="genere">
+            <option value="home">Home</option>
+            <option value="dona">Dona</option>
+            <option value="Nobinari">No Binari</option>
+            <option value="Altres">Altres</option>
+        </select>
+
+        <label for="estatCivil">Estat Civil:</label>
+        <input type="text" id="estatCivil" name="estatCivil" value="solter/a" required>
+    </fieldset>
+    
+    <label for="dataNaixement">Data de Naixement:</label>
+    <input type="date" id="dataNaixement" name="dataNaixement" required>
+
+    
+    <label for="email">Correu Electrònic:</label>
+    <input type="mail" id="email" name="email" placeholder="Hotmail, Gmail, Icloud..." required>
+
+    <label for="mobil">Número de Mòbil:</label>
+    <input type="tel" id="mobil" name="mobil" maxlength="9" required>
+
+    
+    <label for="instagram">Compte d'Instagram:</label>
+    <input type="text" id="instagram" name="instagram" placeholder="@.... (Possa @)" required>
+
+    <label for="twitter">Compte de Twitter:</label>
+    <input type="text" id="twitter" name="twitter" placeholder="@.... (Possa @)"  required>
+
+    <fieldset>
+        <legend>Preferències de Posició</legend>
+
+        <select name="posicio">
+            <optgroup label="Delenter">
+                <option value="DC">Delenter Centeral</option>
+                <option value="EI">Extrem Esquera</option>
+                <option value="ED">Extrem Dret</option>
+            </optgroup>
+            <optgroup label="CM">
+                <option value="CM">MigCampista</option>
+            </optgroup>
+            <optgroup label="DEF">
+                <option value="DEF">Central</option>
+                <option value="DEF">Lateral Esquerra</option>
+                <option value="DEF">Lateral Dret</option>
+            </optgroup>
+            <optgroup label="POR">
+                <option value="POR">Porter</option>
+            </optgroup>
+         </select>
+         
+
+         <label for="foto">Adjunta la teva foto de carnet:</label>
+         <input type="file" id="foto" name="foto">
+ 
+         
+         <label for="colorArmariet">Color de l'Armariet:</label>
+         <input type="color" id="colorArmariet" name="colorArmariet">
+ 
+         
+         <label for="setmanaViatge">Setmana de l'any preferida pel viatge final de temporada:</label>
+         <input type="week" id="setmanaViatge" name="setmanaViatge">
+ 
+        
+        
+
+ 
+    </fieldset>
+
+
+
+    <button>Enviar</button>
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Enviament Metode Get VS  Post </title>
+</head>
+<body>
+
+<h2> Enviament Metode Get VS  Post  </h2>
+<p> És el metode d'entrada a paguines web quan nosaltres hi entrem a trves de la url, Poseu l'atribut action amb el valor "enviar html" i l'atrbut methol amb valor get </p>
+
+<form action="enviar.html" method="get">
+    <label for="name">Nom</label>
+    <input type="text" id="name">
+    <label for="surname"> Cognom</label>
+    <input type="text" id="surname">
+    <input type="submit">
+</form>
+
+<p> Quan no extisteix el fixer que posem a l'action ens ens retorna un error "Cannot GET /HTML/enviar.html"</p>
+
+<p> malgrat posem el nom i cognoms als camps, res no s'envia en la url despres del ? (http://127.0.0.1:5500/HTML/08.14EnviamentsGetVSPost.html) no hi ha cap informació</p>
+    
+<h2> Amb Atribut Name</h2>
+
+<form action="enviar.html" method="get" >
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="Nom">
+    <label for="surname"> Cognom</label>
+    <input type="text" id="surname" name="Cognom">
+    <input type="submit">
+</form>
+
+<h2> Metode Post</h2>
+<p>És un enviament del formulari per la porta del derrera, L'error 405 que surt significa que ha intentat enviar les dades pero aquestes dedes no han arribat al desti</p>
+
+<h2>Sense Atribut Name</h2>
+
+<form action="enviar.html" method="post" >
+    <label for="name">Nom</label>
+    <input type="text" id="name">
+    <label for="surname"> Cognom</label>
+    <input type="text" id="surname">
+    <input type="submit">
+</form>
+
+<p></p>
+
+</body>
+</html>

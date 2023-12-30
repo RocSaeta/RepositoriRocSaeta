@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tipo Radio</title>
+</head>
+<body>
+
+<h2> Input Tipo Radio </h2>
+<p> un input de tipus radio ens permet contruir caselles de seleccio multiple.</p>
+
+<form>
+    <label> Masculi
+        <input type="radio">
+    </label>
+
+    <label> Femeni
+        <input type="radio">
+    </label>
+
+    <label> Peu
+        <input type="radio">
+    </label>
+    <button>Enivar</button>
+</form>
+
+<h2>Atribut Name </h2>
+<p> D'esacisiar les opcions amb l'atriubt name amb el mateix valor a totes les opcions </p>
+
+<from>
+    <label>Maculi</label>
+    <input type="radio" name="garden">
+    <label>Femeni</label>
+    <input type="radio" name="garden">
+    <label>Peu</label>
+    <input type="radio" name="garden">
+    <button>Envia</button>
+</from>
+
+<h2> Atribut Value</h2>
+<p> Necessitem donar un valor a cada opcio perque el servidro l'enregistri</p>
+
+<from>
+    <label>Maculi</label>
+    <input type="radio" name="garden" value="male">
+    <label>Femeni</label>
+    <input type="radio" name="garden" value="female">
+    <label>Peu</label>
+    <input type="radio" name="garden" value="peu">
+    <button>Envia</button>
+</from>
+
+<h2> Atributs Accessoris Booleans</h2>
+<p> Hi ha alguns atrbiuts booleans que us poden anar be en certes situacions</p>
+
+<ul>
+<li>cheked</li>
+<li>disabled</li>
+<li>autofocus</li>
+<li>required</li>
+</ul>
+
+<h2>Cheked</h2>
+<p> es posa seleccionat sol per defecte </p>
+
+<from>
+    <label>Escull el teu estat Civil</label>
+    <label>Solter</label>
+    <input type="radio" name="garden" value="male" requierd checked>
+    <label>Parella</label>
+    <input type="radio" name="garden" value="female">
+    <label>Altres</label>
+    <input type="radio" name="garden" value="peu">
+    <button>Envia</button>
+</from>
+
+<h2>Disabled</h2>
+<p> dissable servix per no deixar marcar una opcio</p>
+
+<from>
+     <label>Maculi</label>
+    <input type="radio" name="garden" value="male" disabled>
+    <label>Femeni</label>
+    <input type="radio" name="garden" value="female">
+    <label>Peu</label>
+    <input type="radio" name="garden" value="peu">
+    <button>Envia</button>
+</from>
+
+
+<h2>Autofocus</h2>
+<p> Serveix per subjerir una opcio surt com amb un recuarda negre </p>
+
+<from>
+    <label>Maculi</label>
+   <input type="radio" name="garden" value="male" autofocus>
+   <label>Femeni</label>
+   <input type="radio" name="garden" value="female">
+   <label>Peu</label>
+   <input type="radio" name="garden" value="peu">
+   <button>Envia</button>
+</from>
+
+
+<h2>Required</h2>
+
+<from>
+    <label>Maculi</label>
+   <input type="radio" name="garden" value="male" required>
+   <label>Femeni</label>
+   <input type="radio" name="garden" value="female">
+   <label>Peu</label>
+   <input type="radio" name="garden" value="peu">
+   <button>Envia</button>
+</from>
+
+</body>
+</html>

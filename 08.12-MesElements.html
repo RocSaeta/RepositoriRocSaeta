@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mes Elements</title>
+</head>
+<body>
+
+<h2> Mes Elements </h2>
+
+<h2> Etiqueta FIELDSET</h2>
+<p> S'utilitza per agrupar elements dins d'un formulari. Es fa servir l'etiqeuta fieldset i tambe l'etiqueta de legend que permet posar un mon al contingut de Fieldset</p>
+
+<form>
+    <fieldset>
+        <legend>Dades Persoanls</legend>
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+        <label for="surname">Cognom</label>
+        <input type="text" id="surname">
+    </fieldset>
+</form>
+
+<h2> Input de Tipus FILE</h2>
+<p> serveix per afegir un fitxer al formulari</p>
+
+<form>
+    <fieldset>
+        <legend>Dades Personals</legend>
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+        <label for="surname">Cognoms</label>
+        <input type="text" id="surname">
+        <input type="file" name="photo" id="photo">
+    </fieldset>  
+</form>
+
+<h2> Etiqueta Meter</h2>
+<p> A part de l'atribut indespensable value, porta atributs min, max, low, high i optimum</p>
+
+<form>
+    <label for="fuel">Combustible</label>
+    <meter id="fuel" min="0" max="100" value="33" low="30" high="75" optimum="100"></meter>
+</form>
+
+<h2> Etiqeuta Progress</h2>
+<p> Te una etiqeuta d'obertura i de tancament. crea un barra de progress en funcio dels atriubt value i max  Una bona practica es treballa amb percentages. Dues barres una amb max 100 il'altre amb el max tenen la metixa longitut </p>
+
+<form>
+    <label for="rask">Tasca 1</label>
+    <progress id="task" max="100" value="60"></progress>
+</form>
+
+<form>
+    <label for="rask">Tasca 2</label>
+    <progress id="task" max="100" value="90"></progress>
+</form>
+
+<h2> Etiqueta Textarea</h2>
+<p> porta els atributs cols i nows amb valors numerics </p>
+
+
+<form>
+    <div>
+        <label for="massage">Escriu el teu missatge</label>
+    </div>
+        <textarea name="" id="message" cols="10" rows="10" ></textarea>
+</form>
+
+<form>
+    <div>
+        <label for="massage">Escriu el teu missatge</label>
+    </div>
+        <textarea name="" id="message" cols="1" rows="1" ></textarea>
+</form>
+
+<h2>  </h2>
+
+</body>
+</html>
