@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/HTML/1-index.html"> Anar a Index</a>
+    
+
+    <img 
+    srcset="imatge-gran.png 2x, imatge-petita.png 1x" 
+    sizes="(min-width: 600px) 600px, 100vw" 
+    src="imatge-petita.png" 
+    alt="Descripció de la imatge">
+
+    <p>srcset: Aquest atribut especifica les diferents versions de la imatge amb les seves resolucions i factors de píxels de dispositiu (DPR). En aquest exemple, hi ha dues versions: una amb resolució normal (1x) i una altra amb el doble de resolució (2x).
+
+    sizes: Aquest atribut indica al navegador quina mida ha de mostrar la imatge en funció de la amplada de la finestra del navegador. En aquest exemple, si l'amplada de la finestra és com a mínim 600 píxels, es mostrarà una imatge de 600 píxels d'amplada. En cas contrari, es mostrarà una imatge amb una amplada igual a l'amplada de la finestra (100vw).
+        
+    src: Aquest és l'atribut de reserva. Si el navegador no suporta l'atribut srcset o no pot seleccionar cap de les imatges disponibles, carregarà la imatge especificada en aquest atribut.</p>
+
+
+
+</body>
+</html>
